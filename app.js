@@ -6,11 +6,9 @@ function makeGrid(rows, cols) {
     for(let i = 0; i < (rows * cols); i++) {
         let cell = document.createElement('div')
         grid.appendChild(cell).className = "grid-item"
-        /*
         cell.addEventListener('mouseenter', () => {
             cell.style.backgroundColor = "rgb(46, 72, 156)"
         })
-        */
     }
 }
 
