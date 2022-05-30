@@ -11,11 +11,9 @@ function makeGrid(rows, cols) {
         })
     }
 }
+makeGrid(16,24)
 
-makeGrid(16, 16)
-
-let btn = document.getElementById('prompt-btn')
-btn.addEventListener('click', () => {
-    let input = prompt("Wake up, it's time for schoo")
-    makeGrid(input, input)
+let eraser = document.getElementById('erase-btn')
+eraser.addEventListener('click', () => {
+    window.location.reload()
 })
