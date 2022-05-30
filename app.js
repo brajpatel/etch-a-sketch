@@ -1,19 +1,52 @@
+const DEFAULT_SIZE  = 16
+
+let currentSize = DEFAULT_SIZE
+
+function setCurrSize(newSize) {
+    currentSize = newSize
+}
+
+let gridSizeVal = document.getElementById('grid-size')
+let gridSlider = document.getElementById('grid-slider')
 let grid = document.getElementById('grid')
 
-function makeGrid(rows, cols) {
-    grid.style.setProperty('--grid-rows', rows);
-    grid.style.setProperty('--grid-cols', cols);
-    for(let i = 0; i < (rows * cols); i++) {
+gridSlider.onmousemove = (e) => updateSizeValue(e.target.value)
+gridSlider.onchange = (e) => changeSize(e.target.value)
+
+function changeSize(value) {
+    setCurrSize(value)
+    updateSizeValue(value)
+    reloadGrid()
+}
+
+function updateSizeValue(value) {
+    gridSizeVal.innerHTML = `${value} x ${value}`
+}
+
+function reloadGrid() {
+    clearGrid.innerHTML = ''
+    makeGrid(currentSize)
+}
+
+function clearGrid() {
+    grid.innerHTML = ''
+}
+
+function makeGrid(size) {
+    grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+    grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
+    for(let i = 0; i < (size * size); i++) {
         let cell = document.createElement('div')
-        grid.appendChild(cell).className = "grid-item"
+        cell.classList.add('grid-item')
+
         cell.addEventListener('mouseenter', () => {
-            cell.style.backgroundColor = "rgb(46, 72, 156)"
+            cell.style.backgroundColor = "rgb(0,0,0,0.37)"
         })
+
+        grid.appendChild(cell)
     }
 }
-makeGrid(16,24)
 
-let eraser = document.getElementById('erase-btn')
-eraser.addEventListener('click', () => {
-    window.location.reload()
-})
+window.onload = () => {
+    makeGrid(DEFAULT_SIZE)
+}
