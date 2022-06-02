@@ -47,13 +47,13 @@ h1 {
     height: 70%;
     border-radius: 5px;
     width: 30%;
-    box-shadow: 0 0 15px 2px rgb(161, 161, 161);
+    background-color: var(--bg);
 }
 
 input[type='color'] {
     -webkit-appearance: none;
-    width: 9.3vw;
-    height: 19.7vh;
+    width: 120px;
+    height: 120px;
     border: none;
     background-color: rgb(201,201,201);
     transition: transform 300ms ease;
