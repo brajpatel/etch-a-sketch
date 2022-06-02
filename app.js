@@ -24,12 +24,12 @@ function updateSizeValue(value) {
 }
 
 function reloadGrid() {
-    clearGrid.innerHTML = ''
+    clearGrid()
     makeGrid(currentSize)
 }
 
 function clearGrid() {
-    grid.innerHTML = ''
+    grid.innerHTML = null
 }
 
 function makeGrid(size) {
