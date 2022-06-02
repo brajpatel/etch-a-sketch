@@ -118,8 +118,8 @@ input[type='range']::-webkit-slider-thumb {
 
 #grid {
     display: grid;
-    width: 39vw;
-    height: 82vh;
+    width: 400px;
+    height: 400px;
 }
 
 .grid-item {
