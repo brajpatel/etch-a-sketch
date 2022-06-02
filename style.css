@@ -47,7 +47,6 @@ h1 {
     height: 70%;
     border-radius: 5px;
     width: 30%;
-    background-color: var(--bg);
 }
 
 input[type='color'] {
@@ -55,7 +54,7 @@ input[type='color'] {
     width: 120px;
     height: 160px;
     border: none;
-    background-color: rgb(201,201,201);
+    background-color: var(--bg);
     transition: transform 300ms ease;
     margin-bottom: 1.5rem;
 }
