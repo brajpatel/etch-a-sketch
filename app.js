@@ -1,4 +1,4 @@
-const DEFAULT_SIZE  = 16
+const DEFAULT_SIZE  = 35
 const DEFAULT_COLOR = '#171717'
 
 let currentSize = DEFAULT_SIZE
