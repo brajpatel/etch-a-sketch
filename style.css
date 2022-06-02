@@ -52,8 +52,8 @@ h1 {
 
 input[type='color'] {
     -webkit-appearance: none;
-    width: 120px;
-    height: 120px;
+    width: 9.3vw;
+    height: 19.7vh;
     border: none;
     background-color: rgb(201,201,201);
     transition: transform 300ms ease;
