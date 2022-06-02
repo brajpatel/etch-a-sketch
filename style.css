@@ -43,6 +43,7 @@ h1 {
     background: rgb(201, 201, 201);
     height: 70%;
     border-radius: 5px;
+    width: 30%;
     box-shadow: 0 0 15px 2px rgb(161, 161, 161);
 }
 
