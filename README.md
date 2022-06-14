@@ -4,3 +4,7 @@
 - Adjust the grid size to your liking
 - Get creating!
 
+### Made using:
+- HTML
+- CSS
+- JavaScript
