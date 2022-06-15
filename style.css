@@ -51,8 +51,8 @@ h1 {
 
 input[type='color'] {
     -webkit-appearance: none;
-    width: 16vw;
-    height: 9vh;
+    width: 150px;
+    height: 150px;
     border: none;
     background-color: var(--bg);
     transition: transform 300ms ease;
