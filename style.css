@@ -33,8 +33,9 @@ input {
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
     box-shadow: 0 0 20px rgba(31, 31, 31, 0.6);
+    border-radius: 1px;
 }
 
 h1 {
@@ -54,6 +55,7 @@ input[type="range"] {
     background: transparent;
     cursor: pointer;
     width: 8rem;
+    margin: 0.2rem 0 0.8rem 0;
 }
 
 input[type="range"]:focus {
@@ -74,6 +76,22 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     height: 1.2rem;
     width: 1.2rem;
+}
+
+.clear-grid {
+    padding: 4px 8px;
+    background: rgb(220, 20, 20);
+    color: #eaebea;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    opacity: 0.75;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.clear-grid:hover {
+    opacity: 1;
 }
 
 .container {
