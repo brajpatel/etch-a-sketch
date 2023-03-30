@@ -1,8 +1,10 @@
 const colorPicker = document.getElementById('color-picker');
 const currentGridSize = document.getElementById('current-grid-size');
 const gridRange = document.getElementById('grid-range');
+const clearGridBtn = document.getElementById('clear-grid');
 let currentColor = 'black';
-let updatedSize;
+let initialGridSize = 35;
+let updatedSize = initialGridSize;
 
 colorPicker.addEventListener('input', () => {
     currentColor = colorPicker.value;
@@ -11,6 +13,10 @@ colorPicker.addEventListener('input', () => {
 gridRange.addEventListener('input', () => {
     currentGridSize.textContent = gridRange.value;
     updatedSize = gridRange.value;
+    createGrid(updatedSize);
+})
+
+clearGridBtn.addEventListener('click', () => {
     createGrid(updatedSize);
 })
 
@@ -31,4 +37,4 @@ function createGrid(size) {
     }
 }
 
-window.onload = createGrid(35);
+window.onload = createGrid(initialGridSize);
