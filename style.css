@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.github-link {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+    font-size: 2rem;
+    color: #121212;
+}
+
+input {
+    outline: none;
+}
+
+.user-controls {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 0 20px rgba(31, 31, 31, 0.6);
+}
+
+h1 {
+    color: #121212;
+    border-bottom: 2px solid #121212;
+    padding-bottom: 0.6rem;
+}
+
+.user-controls input[type="color"] {
+    height: 50px;
+    width: 50px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 8rem;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #5a51b9;
+    border-radius: 0.5rem;
+    height: 0.5rem;  
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -6px;
+    background-color: #342356;
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.container {
+    background: white;
+    height: 450px;
+    width: 450px;
+    border: 2px solid rgba(92, 92, 92, 0.6);
+    box-shadow: 0 0 25px rgba(31, 31, 31, 0.6);
+}
+
+.grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+.cell {
+    border: 1px solid rgba(92, 92, 92, 0.3);
+}
